@@ -10,7 +10,10 @@ Start by downloading prace.js and adding it and the Ace editor to your project:
 
 Then, initialize PraceJS on document load with the Javascript code:
 ```javascript
-praceInit("pre");
+function init() {
+    praceInit("pre");
+}
+window.onload = init;
 ```
 ...where the first arguement of the `praceInit()` function is the element to transform. I personally recommend the `pre` element, because if something goes wrong or Javascript is disabled, the pre element will still render as a code block.
 
