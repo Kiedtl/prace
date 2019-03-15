@@ -14,5 +14,15 @@ praceInit("pre");
 ```
 ...where the first arguement of the `praceInit()` function is the element to transform. I personally recommend the `pre` element, because if something goes wrong or Javascript is disabled, the pre element will still render as a code block.
 
+Then, you can define your `pre` elements:
+```html
+<pre lang="html" theme="tomorrow">
+...
+</pre>
+```
+
+## Demo
+See [this page](http://kiedtl.surge.sh/projects/prace).
+
 ## License
 AGPL-v3.0
